@@ -15,8 +15,6 @@
                 '//cdn.bootcss.com/sprintf/1.0.3/sprintf.min',
                 PATH_LIB + 'sprintf/1.0.3/sprintf.min'
             ],
-
-            
             'require/css': [
                 '//cdn.bootcss.com/require-css/0.1.8/css.min',
                 PATH_LIB + 'require-css/0.1.8/css.min'
