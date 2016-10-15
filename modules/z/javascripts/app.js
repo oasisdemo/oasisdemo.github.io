@@ -1,11 +1,11 @@
-define(['angularAMD', 'jquery', 'async', 'angular', 'angular-ui-router', 'sprintf'], function(angularAMD, route, $, async, angular){
+define(['angularAMD', 'jquery', 'async', 'angular', 'angular-ui-router', 'sprintf'], function(angularAMD, $, async, angular){
 
     var app = angular.module('app', ['ui.router']);
 
     var URL_ROUTES = "init/z/route.json";
     var baseUrl = 'modules';
     var LANGUAGE = 'cn';
-    
+
     app.config(config).run(run);
 
     function config ($stateProvider, $urlRouterProvider, $controllerProvider) {
