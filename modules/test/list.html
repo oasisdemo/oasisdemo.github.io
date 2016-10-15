@@ -1,0 +1,13 @@
+﻿<table>
+  <tr>
+    <td><strong>发件人</strong></td>
+    <td><strong>内容</strong></td>
+    <td><strong>日期{{info}}</strong></td>
+  </tr>
+  <tr ng-repeat="message in messages">
+    <td>{{message.sender}}</td>
+    <td><a href="#/test/detail/{{message.id}}" ui-sref1="/test/detail/{{message.id}}">{{message.subject}}</a></td>
+    <td>{{message.date}}</td>
+  </tr>
+</table>
+<div ui-view></div>

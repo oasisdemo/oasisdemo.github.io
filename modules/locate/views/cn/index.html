@@ -1,0 +1,22 @@
+﻿<div>经度{{position.coords.longitude}}</div>
+<div>纬度{{position.coords.latitude}}</div>
+<div>经纬度精确度{{position.coords.accuracy}}米</div>
+<div>海拔{{position.coords.altitude}}</div>
+<div>海拔精确度{{position.coords.altitudeAccuracy}}米</div>
+<div>朝向{{position.coords.heading}}</div>
+<div>速度{{position.coords.speed}}米/秒</div>
+<div>北京时间 {{position.timestamp}}</div>
+<div>信息 {{message}}</div>
+<button type="button" class="btn btn-primary">获取GEO信息，需要您授权</button>
+
+<!--
+ Property	 Type	 Notes
+ coords.latitude（纬度）	 double	 Decimal degrees
+ coords.longitude（经度）	 double	 Decimal degrees
+ coords.altitude（海拔）	 double or null	 Meters
+ coords.accuracy（精确度）	 double	 Meters
+ coords.altitudeAccuracy	 double or null	 Meters
+ coords.heading（朝向）	 double or null	 degrees clockwise from the north
+ coords.speed	 double or null	 Meters/second
+ timestamp	 DOMTimeStamp	 Like a Date() object
+ -->
