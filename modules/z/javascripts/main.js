@@ -112,6 +112,6 @@
         deps: [
             'app'
         ],
-        urlArgs: 'bust=1'// + (new Date()).getTime()
+        urlArgs: 'bust=' + (new Date()).getTime()
 	});
 }( window );
