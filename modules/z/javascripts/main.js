@@ -23,10 +23,10 @@
                 '//cdn.bootcss.com/requirejs-plugins/1.0.3/json.min',
                 PATH_LIB + 'requirejs-plugins/1.0.3/json.min'
             ],
-	    	'less'			: '//cdn.bootcss.com/less.js/2.7.1/less.min',
+	    	'less'			  : '//cdn.bootcss.com/less.js/2.7.1/less.min',
 	        'bootstrap'       : '//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min',  
 	        'angular'         : '//cdn.bootcss.com/angular.js/1.5.6/angular.min',  
-	        'angular-route' : '//cdn.bootcss.com/angular.js/1.5.6/angular-route.min',
+	        'angular-route'   : '//cdn.bootcss.com/angular.js/1.5.6/angular-route.min',
             'angular-ui-router' : '//cdn.bootcss.com/angular-ui-router/1.0.0-alpha0/angular-ui-router.min',
             'routes'            : MODULE_MAIN + '/javascripts/routes',
             'jquery': [
@@ -101,6 +101,6 @@
         deps: [
             'app'
         ],
-        urlArgs: 'bust=1'// + (new Date()).getTime()
+        urlArgs: 'bust=' + (new Date()).getTime()
 	});
 }( window );
