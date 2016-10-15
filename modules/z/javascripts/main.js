@@ -15,14 +15,22 @@
                 '//cdn.bootcss.com/sprintf/1.0.3/sprintf.min',
                 PATH_LIB + 'sprintf/1.0.3/sprintf.min'
             ],
+
+            
             'require/css': [
                 '//cdn.bootcss.com/require-css/0.1.8/css.min',
                 PATH_LIB + 'require-css/0.1.8/css.min'
+            ],
+            'require/text': [
+                '//cdn.bootcss.com/require-text/2.0.12/text.min',
+                PATH_LIB + 'require-text/2.0.12/text.min'
             ],
             'require/json': [
                 '//cdn.bootcss.com/requirejs-plugins/1.0.3/json.min',
                 PATH_LIB + 'requirejs-plugins/1.0.3/json.min'
             ],
+
+
 	    	'less'			  : '//cdn.bootcss.com/less.js/2.7.1/less.min',
 	        'bootstrap'       : '//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min',  
 	        'angular'         : '//cdn.bootcss.com/angular.js/1.5.6/angular.min',  
