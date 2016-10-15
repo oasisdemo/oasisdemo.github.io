@@ -27,7 +27,7 @@
                 '//cdn.bootcss.com/require-text/2.0.12/text.min',
                 PATH_LIB + 'require-text/2.0.12/text.min'
             ],
-            'require/json': [
+            'json': [
                 '//cdn.bootcss.com/requirejs-plugins/1.0.3/json.min',
                 PATH_LIB + 'requirejs-plugins/1.0.3/json.min'
             ],
@@ -102,15 +102,15 @@
 	    },
         map: {
             '*': {
-                css: 'require/css',
-                text: 'require/text',
-                json: 'require/json',
+                css: 'css',
+                text: 'text',
+                json: 'json',
                 echarts : 'echarts3'
             }
         },
         deps: [
             'app'
         ],
-        urlArgs: 'bust=' + (new Date()).getTime()
+        urlArgs: 'bust=1'// + (new Date()).getTime()
 	});
 }( window );
