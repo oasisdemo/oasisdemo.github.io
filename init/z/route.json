@@ -1,0 +1,31 @@
+{
+  "main":"z",
+  "state":"z.z",
+  "home":"/locate",
+  "routes":[
+    {
+      "module":"z",
+      "state": "z",
+      "url": "/z",
+      "view": "z"
+    },
+    {
+      "module":"z",
+      "state": "z.z",
+      "url": "/z",
+      "view": "z.z"
+    },
+    {
+      "module":"locate",
+      "state": "locate",
+      "url": "^/locate",
+      "view": "index"
+    },
+    {
+      "module":"canvas",
+      "state": "canvas",
+      "url": "/canvas",
+      "view": "index"
+    }
+  ]
+}
