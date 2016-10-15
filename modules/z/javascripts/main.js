@@ -29,8 +29,6 @@
                 '//cdn.bootcss.com/requirejs-plugins/1.0.3/json.min',
                 PATH_LIB + 'requirejs-plugins/1.0.3/json.min'
             ],
-
-
 	    	'less'			  : '//cdn.bootcss.com/less.js/2.7.1/less.min',
 	        'bootstrap'       : '//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min',  
 	        'angular'         : '//cdn.bootcss.com/angular.js/1.5.6/angular.min',  
@@ -103,6 +101,7 @@
         map: {
             '*': {
                 css: 'require/css',
+                text: 'require/text',
                 json: 'require/json',
                 echarts : 'echarts3'
             }
