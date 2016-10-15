@@ -3,7 +3,7 @@
  * create by zhaotinghai at 20161015
  */
 define(['angular', 'angularAMD', 'jquery', 'angular-ui-router', 'sprintf'],
-function(angular, angularAMD, $,){
+function(angular, angularAMD, $){
 
     var app = angular.module('app', ['ui.router']);
 
