@@ -25,6 +25,10 @@
                 '//cdn.bootcss.com/require-text/2.0.12/text.min',
                 PATH_LIB + 'require-text/2.0.12/text.min'
             ],
+            'text': [
+                '//cdn.bootcss.com/require-text/2.0.12/text.min',
+                PATH_LIB + 'require-text/2.0.12/text.min'
+            ],
             'require/json': [
                 '//cdn.bootcss.com/requirejs-plugins/1.0.3/json.min',
                 PATH_LIB + 'requirejs-plugins/1.0.3/json.min'
