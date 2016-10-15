@@ -13,6 +13,10 @@ function(angular, angularAMD, $,){
 
     app.config(config).run(run);
 
+    angularAMD.bootstrap(app);
+
+    return app;
+
     function config ($stateProvider, $urlRouterProvider, $controllerProvider) {
         console.log('app.config');
         $.ajax({
@@ -62,7 +66,4 @@ function(angular, angularAMD, $,){
     function run ($rootScope, $state, $http) {
         console.log('app.run')
     }
-
-    angularAMD.bootstrap(app);
-    return app;
 });
