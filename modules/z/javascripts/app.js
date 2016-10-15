@@ -1,4 +1,9 @@
-define(['angularAMD', 'jquery', 'async', 'angular', 'angular-ui-router', 'sprintf'], function(angularAMD, $, async, angular){
+/**
+ * app.js
+ * create by zhaotinghai at 20161015
+ */
+define(['angular', 'angularAMD', 'jquery', 'angular-ui-router', 'sprintf'],
+function(angular, angularAMD, $,){
 
     var app = angular.module('app', ['ui.router']);
 
