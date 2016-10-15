@@ -1,5 +1,6 @@
 /**
  * main.js
+ * create by zhaotinghai at 20161015
  */
 +function ( global ) {
 
