@@ -1,11 +1,8 @@
-define(['jquery', 'async', 'angular', 'angular-ui-router', 'sprintf'], function($, async, angular){
-//'angular-ui-router'  'angular-messages', 'angular-route'
+define(['angularAMD', 'jquery', 'async', 'angular', 'angular-ui-router', 'sprintf'], function(angularAMD, $, async, angular){
 
-    var app = angular.module('app', ['ui.router']); //, 'ngRoute'
-
-
+    var app = angular.module('app', ['ui.router']);
+    
     var URL_ROUTES = "init/z/route.json";
-
     var baseUrl = 'modules';
     var LANGUAGE = 'cn';
 
@@ -25,12 +22,10 @@ define(['jquery', 'async', 'angular', 'angular-ui-router', 'sprintf'], function(
         function success(data) {
 
             $urlRouterProvider.when("", data.home);
-            //$urlRouterProvider.otherwise(data.home);
 
             angular.forEach(data.routes, function(v, i) {
                 var controller = sprintf('%s/controllers/%s', v.module, v.view);
                 var templateUrl = sprintf('%s/%s/views/%s/%s.html', baseUrl, v.module, LANGUAGE, v.view);
-                // console.log(templateUrl)
                 var state = ( (v.module == data.main)?"":data.state ) + v.state;
                 
                 $stateProvider.state(state, {
@@ -62,6 +57,7 @@ define(['jquery', 'async', 'angular', 'angular-ui-router', 'sprintf'], function(
     function run ($rootScope, $state, $http) {
         console.log('app.run')
     }
-    angular.bootstrap(document, ['app']);
+
+    angularAMD.bootstrap(app);
     return app;
 });

@@ -49,6 +49,10 @@
                 '//cdn.bootcss.com/echarts/3.2.2/echarts.min',
                 PATH_LIB + 'echarts/echarts.min'
             ],
+            'angularAMD': [
+                '//cdn.jsdelivr.net/angular.amd/0.2/angularAMD.min',
+                PATH_LIB + 'angularjs/angularAMD'
+            ],
             'angular': [
                 '//cdn.bootcss.com/angular.js/1.5.7/angular',
                 PATH_LIB + 'angularjs/angular'
@@ -60,10 +64,6 @@
             'angular-ui-router': [
                 '//cdn.bootcss.com/angular-ui-router/0.2.18/angular-ui-router',
                 PATH_LIB + 'ui-router/angular-ui-router'
-            ],
-            'angularAMD': [
-                '//cdn.jsdelivr.net/angular.amd/0.2/angularAMD.min',
-                PATH_LIB + 'angularjs/angularAMD'
             ],
             'bootstrap': [
                 '//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap',
