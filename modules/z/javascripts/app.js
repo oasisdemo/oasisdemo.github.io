@@ -1,4 +1,4 @@
-define(['angularAMD', 'json!init/z/route.json', 'jquery', 'async', 'angular', 'angular-ui-router', 'sprintf'], function(angularAMD, route, $, async, angular){
+define(['angularAMD', 'json!init/z/route', 'jquery', 'async', 'angular', 'angular-ui-router', 'sprintf'], function(angularAMD, route, $, async, angular){
 
     var app = angular.module('app', ['ui.router']);
 
