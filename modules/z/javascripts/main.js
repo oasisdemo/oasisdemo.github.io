@@ -95,6 +95,7 @@
         map: {
             '*': {
                 css: 'require/css',
+                json: 'require/json',
                 echarts : 'echarts3'
             }
         },
