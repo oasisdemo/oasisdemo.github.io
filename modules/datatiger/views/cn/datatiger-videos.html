@@ -1,0 +1,121 @@
+﻿<div class="dashboard container-fluid" ng-init="
+
+        RC_TITLE_VIDEO_COUNT='总期数';
+
+
+        RC_TITLE_VIDEO_1='一个AP到底能带多少终端？';
+        RC_TITLE_VIDEO_2='站在IT角色看SMB选址应注意什么？';
+        RC_TITLE_VIDEO_3='为什么不能用WiFi做视频直播？';
+        RC_TITLE_VIDEO_4='现身说法 三个无线案例的反思';
+        RC_TITLE_VIDEO_5='WiFi干扰到底有多大？';
+        RC_TITLE_VIDEO_6='为什么中小企业WiFi首选国货';
+        RC_TITLE_VIDEO_7='中小企业IT最痛恨的终端大盘点';
+        RC_TITLE_VIDEO_8='企业无线为什么那么肉？';
+        RC_TITLE_VIDEO_9='为什么5G WiFi用起来比2.4G问题多？';
+        RC_TITLE_VIDEO_10='为什么不看好商业WiFi';
+        RC_TITLE_VIDEO_11='小微餐饮部署WiFi应该怎样弄？';
+        RC_TITLE_VIDEO_12='315WiFi下半场--如何防范钓鱼WiFi！';
+        RC_TITLE_VIDEO_13='华为、华三、锐捷多Radio无线AP分析';
+        RC_TITLE_VIDEO_14='苹果“拒爱”WiFi';
+        RC_TITLE_VIDEO_15='为啥说中小企业没钱就不要选国外网络产品！';
+        RC_TITLE_VIDEO_16='WiFi上不了，手把手教你来解决！';
+        RC_TITLE_VIDEO_17='联合办公、孵化器的IT运维到底需要多大成本';
+        RC_TITLE_VIDEO_18='中小“互联网+“场景到底要不要做有线';
+        RC_TITLE_VIDEO_19='中小企业如何选宽带之决策者篇';
+        RC_TITLE_VIDEO_20='你被专线独享与宽带共享忽悠了多少年？';
+        RC_TITLE_VIDEO_21='运营商专线与宽带的数据流向分析';
+
+        videos = [
+            {title:RC_TITLE_VIDEO_1, url:'http://v.qq.com/x/page/u01728w0t2h.html'},
+            {title:RC_TITLE_VIDEO_2, url:'http://v.qq.com/x/page/i0172vdpyk8.html'},
+            {title:RC_TITLE_VIDEO_3, url:'http://v.qq.com/x/page/r0172gztgye.html'},
+            {title:RC_TITLE_VIDEO_4, url:'http://v.qq.com/x/page/m0172aktrwc.html'},
+            {title:RC_TITLE_VIDEO_5, url:'http://v.qq.com/x/page/o0172v8afh4.html'},
+            {title:RC_TITLE_VIDEO_6, url:'http://v.qq.com/x/page/y017219flkh.html'},
+            {title:RC_TITLE_VIDEO_7, url:'http://v.qq.com/x/page/a01726iiusk.html'},
+            {title:RC_TITLE_VIDEO_8, url:'http://v.qq.com/x/page/p01768vranb.html'},
+            {title:RC_TITLE_VIDEO_9, url:'http://v.qq.com/x/page/p0181iyf4y6.html'},
+            {title:RC_TITLE_VIDEO_10, url:'http://v.qq.com/x/page/k0183uiycdu.html'},
+            {title:RC_TITLE_VIDEO_11, url:'http://v.qq.com/x/page/r01859cjoyk.html'},
+            {title:RC_TITLE_VIDEO_12, url:'http://v.qq.com/x/page/y0191ggax71.html'},
+            {title:RC_TITLE_VIDEO_13, url:'http://v.qq.com/x/page/q0194x4257t.html'},
+            {title:RC_TITLE_VIDEO_14, url:'http://v.qq.com/x/page/q0300mzfeo3.html'},
+            {title:RC_TITLE_VIDEO_15, url:'http://v.qq.com/x/page/u03066u413h.html'},
+            {title:RC_TITLE_VIDEO_16, url:'http://v.qq.com/x/page/a0308caf0k2.html'},
+            {title:RC_TITLE_VIDEO_17, url:'http://v.qq.com/x/page/d0315sbsnni.html'},
+            {title:RC_TITLE_VIDEO_18, url:'http://v.qq.com/x/page/v0317gk7soq.html'},
+            {title:RC_TITLE_VIDEO_19, url:'http://v.qq.com/x/page/w0323yip6i8.html'},
+            {title:RC_TITLE_VIDEO_20, url:'http://v.qq.com/x/page/l0326dt6i4t.html'},
+            {title:RC_TITLE_VIDEO_21, url:'http://v.qq.com/x/page/b0332abq8lm.html'}
+        ];
+        videos2 = [
+            {title:RC_TITLE_VIDEO_1, url:'http://v.qq.com/x/page/u01728w0t2h.html'},
+            {title:RC_TITLE_VIDEO_2, url:'http://v.qq.com/x/page/i0172vdpyk8.html'},
+            {title:RC_TITLE_VIDEO_3, url:'http://v.qq.com/x/page/r0172gztgye.html'},
+            {title:RC_TITLE_VIDEO_4, url:'http://v.qq.com/x/page/m0172aktrwc.html'},
+            {title:RC_TITLE_VIDEO_5, url:'http://v.qq.com/x/page/o0172v8afh4.html'},
+            {title:RC_TITLE_VIDEO_6, url:'http://v.qq.com/x/page/y017219flkh.html'},
+            {title:RC_TITLE_VIDEO_7, url:'http://v.qq.com/x/page/a01726iiusk.html'},
+            {title:RC_TITLE_VIDEO_8, url:'http://v.qq.com/x/page/p01768vranb.html'},
+            {title:RC_TITLE_VIDEO_9, url:'http://v.qq.com/x/page/p0181iyf4y6.html'},
+            {title:RC_TITLE_VIDEO_10, url:'http://v.qq.com/x/page/k0183uiycdu.html'},
+            {title:RC_TITLE_VIDEO_11, url:'http://v.qq.com/x/page/r01859cjoyk.html'},
+            {title:RC_TITLE_VIDEO_12, url:'http://v.qq.com/x/page/y0191ggax71.html'},
+            {title:RC_TITLE_VIDEO_13, url:'http://v.qq.com/x/page/q0194x4257t.html'},
+            {title:RC_TITLE_VIDEO_14, url:'http://v.qq.com/x/page/q0300mzfeo3.html'},
+            {title:RC_TITLE_VIDEO_15, url:'http://v.qq.com/x/page/u03066u413h.html'},
+            {title:RC_TITLE_VIDEO_16, url:'http://v.qq.com/x/page/a0308caf0k2.html'},
+            {title:RC_TITLE_VIDEO_17, url:'http://v.qq.com/x/page/d0315sbsnni.html'},
+            {title:RC_TITLE_VIDEO_18, url:'http://v.qq.com/x/page/v0317gk7soq.html'},
+            {title:RC_TITLE_VIDEO_19, url:'http://v.qq.com/x/page/w0323yip6i8.html'},
+            {title:RC_TITLE_VIDEO_20, url:'http://v.qq.com/x/page/l0326dt6i4t.html'},            {title:RC_TITLE_VIDEO_1, url:'http://v.qq.com/x/page/u01728w0t2h.html'},
+            {title:RC_TITLE_VIDEO_2, url:'http://v.qq.com/x/page/i0172vdpyk8.html'},
+            {title:RC_TITLE_VIDEO_3, url:'http://v.qq.com/x/page/r0172gztgye.html'},
+            {title:RC_TITLE_VIDEO_4, url:'http://v.qq.com/x/page/m0172aktrwc.html'},
+            {title:RC_TITLE_VIDEO_5, url:'http://v.qq.com/x/page/o0172v8afh4.html'},
+            {title:RC_TITLE_VIDEO_6, url:'http://v.qq.com/x/page/y017219flkh.html'},
+            {title:RC_TITLE_VIDEO_7, url:'http://v.qq.com/x/page/a01726iiusk.html'},
+            {title:RC_TITLE_VIDEO_8, url:'http://v.qq.com/x/page/p01768vranb.html'},
+            {title:RC_TITLE_VIDEO_9, url:'http://v.qq.com/x/page/p0181iyf4y6.html'},
+            {title:RC_TITLE_VIDEO_10, url:'http://v.qq.com/x/page/k0183uiycdu.html'},
+            {title:RC_TITLE_VIDEO_11, url:'http://v.qq.com/x/page/r01859cjoyk.html'},
+            {title:RC_TITLE_VIDEO_12, url:'http://v.qq.com/x/page/y0191ggax71.html'},
+            {title:RC_TITLE_VIDEO_13, url:'http://v.qq.com/x/page/q0194x4257t.html'},
+            {title:RC_TITLE_VIDEO_14, url:'http://v.qq.com/x/page/q0300mzfeo3.html'},
+            {title:RC_TITLE_VIDEO_15, url:'http://v.qq.com/x/page/u03066u413h.html'},
+            {title:RC_TITLE_VIDEO_16, url:'http://v.qq.com/x/page/a0308caf0k2.html'},
+            {title:RC_TITLE_VIDEO_17, url:'http://v.qq.com/x/page/d0315sbsnni.html'},
+            {title:RC_TITLE_VIDEO_18, url:'http://v.qq.com/x/page/v0317gk7soq.html'},
+            {title:RC_TITLE_VIDEO_19, url:'http://v.qq.com/x/page/w0323yip6i8.html'},
+            {title:RC_TITLE_VIDEO_20, url:'http://v.qq.com/x/page/l0326dt6i4t.html'},            {title:RC_TITLE_VIDEO_1, url:'http://v.qq.com/x/page/u01728w0t2h.html'},
+            {title:RC_TITLE_VIDEO_2, url:'http://v.qq.com/x/page/i0172vdpyk8.html'},
+            {title:RC_TITLE_VIDEO_3, url:'http://v.qq.com/x/page/r0172gztgye.html'},
+            {title:RC_TITLE_VIDEO_4, url:'http://v.qq.com/x/page/m0172aktrwc.html'},
+            {title:RC_TITLE_VIDEO_5, url:'http://v.qq.com/x/page/o0172v8afh4.html'},
+            {title:RC_TITLE_VIDEO_6, url:'http://v.qq.com/x/page/y017219flkh.html'},
+            {title:RC_TITLE_VIDEO_7, url:'http://v.qq.com/x/page/a01726iiusk.html'},
+            {title:RC_TITLE_VIDEO_8, url:'http://v.qq.com/x/page/p01768vranb.html'},
+            {title:RC_TITLE_VIDEO_9, url:'http://v.qq.com/x/page/p0181iyf4y6.html'},
+            {title:RC_TITLE_VIDEO_10, url:'http://v.qq.com/x/page/k0183uiycdu.html'},
+            {title:RC_TITLE_VIDEO_11, url:'http://v.qq.com/x/page/r01859cjoyk.html'},
+            {title:RC_TITLE_VIDEO_12, url:'http://v.qq.com/x/page/y0191ggax71.html'},
+            {title:RC_TITLE_VIDEO_13, url:'http://v.qq.com/x/page/q0194x4257t.html'},
+            {title:RC_TITLE_VIDEO_14, url:'http://v.qq.com/x/page/q0300mzfeo3.html'},
+            {title:RC_TITLE_VIDEO_15, url:'http://v.qq.com/x/page/u03066u413h.html'},
+            {title:RC_TITLE_VIDEO_16, url:'http://v.qq.com/x/page/a0308caf0k2.html'},
+            {title:RC_TITLE_VIDEO_17, url:'http://v.qq.com/x/page/d0315sbsnni.html'},
+            {title:RC_TITLE_VIDEO_18, url:'http://v.qq.com/x/page/v0317gk7soq.html'},
+            {title:RC_TITLE_VIDEO_19, url:'http://v.qq.com/x/page/w0323yip6i8.html'},
+            {title:RC_TITLE_VIDEO_20, url:'http://v.qq.com/x/page/l0326dt6i4t.html'},
+            {title:RC_TITLE_VIDEO_21, url:'http://v.qq.com/x/page/b0332abq8lm.html'}
+        ];
+    ">
+    <p>{{RC_TITLE_VIDEO_COUNT}}: {{videos.length}}</p>
+
+    <div class="page-row" ng-repeat="video in videos2">
+        <div class="col-xs-12">
+            <a target="_blank" href="{{video.url}}">{{video.title}}</a>
+        </div>
+
+    </div>
+</div>

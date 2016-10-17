@@ -1,6 +1,5 @@
 /**
  * main.js
- * create by zhaotinghai at 20161015
  */
 +function ( global ) {
 
@@ -20,15 +19,7 @@
                 '//cdn.bootcss.com/require-css/0.1.8/css.min',
                 PATH_LIB + 'require-css/0.1.8/css.min'
             ],
-            'require/text': [
-                '//cdn.bootcss.com/require-text/2.0.12/text.min',
-                PATH_LIB + 'require-text/2.0.12/text.min'
-            ],
-            'text': [
-                '//cdn.bootcss.com/require-text/2.0.12/text.min',
-                PATH_LIB + 'require-text/2.0.12/text.min'
-            ],
-            'json': [
+            'require/json': [
                 '//cdn.bootcss.com/requirejs-plugins/1.0.3/json.min',
                 PATH_LIB + 'requirejs-plugins/1.0.3/json.min'
             ],
@@ -82,7 +73,11 @@
                 // '//cdn.bootcss.com/bootstrap-table/1.10.1/bootstrap-table',
                 PATH_LIB + 'bootstrap-table/bootstrap-table'
             ],
-            'app': MODULE_MAIN + '/javascripts/app'
+            'app': MODULE_MAIN + '/javascripts/app',
+            'font-awesome':[
+                '//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min'
+
+            ]
 	    },
 	    shim : {
 	        bootstrap : {
@@ -103,15 +98,15 @@
 	    },
         map: {
             '*': {
-                css: 'css',
-                text: 'text',
-                json: 'json',
+                css: 'require/css',
+                'less': PATH_LIB + 'require-less/less',
                 echarts : 'echarts3'
             }
         },
         deps: [
+            'css!font-awesome',
             'app'
         ],
-        urlArgs: 'bust=' + (new Date()).getTime()
+        urlArgs: 'bust=1'// + (new Date()).getTime()
 	});
 }( window );

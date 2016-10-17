@@ -1,7 +1,7 @@
 {
   "main":"z",
   "state":"z.z",
-  "home":"/locate",
+  "home":"/datatiger",
   "routes":[
     {
       "module":"z",
@@ -19,6 +19,12 @@
       "module":"locate",
       "state": "locate",
       "url": "^/locate",
+      "view": "index"
+    },
+    {
+      "module":"datatiger",
+      "state": "datatiger",
+      "url": "^/datatiger",
       "view": "index"
     },
     {

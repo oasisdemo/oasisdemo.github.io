@@ -1,21 +1,14 @@
-/**
- * app.js
- * create by zhaotinghai at 20161015
- */
-define(['angular', 'angularAMD', 'jquery', 'angular-ui-router', 'sprintf'],
-function(angular, angularAMD, $){
+define(['angularAMD', 'jquery', 'async', 'angular', 'angular-ui-router', 'sprintf'], function(angularAMD, $, async, angular){
+//'angular-ui-router'  'angular-messages', 'angular-route'
 
-    var app = angular.module('app', ['ui.router']);
+    var app = angular.module('app', ['ui.router']); //, 'ngRoute'
 
     var URL_ROUTES = "init/z/route.json";
+
     var baseUrl = 'modules';
     var LANGUAGE = 'cn';
 
     app.config(config).run(run);
-
-    angularAMD.bootstrap(app);
-
-    return app;
 
     function config ($stateProvider, $urlRouterProvider, $controllerProvider) {
         console.log('app.config');
@@ -30,11 +23,14 @@ function(angular, angularAMD, $){
 
         function success(data) {
 
+            //$urlRouterProvider.when("", data.home);
             $urlRouterProvider.when("", data.home);
+            //$urlRouterProvider.otherwise(data.home);
 
             angular.forEach(data.routes, function(v, i) {
                 var controller = sprintf('%s/controllers/%s', v.module, v.view);
                 var templateUrl = sprintf('%s/%s/views/%s/%s.html', baseUrl, v.module, LANGUAGE, v.view);
+                // console.log(templateUrl)
                 var state = ( (v.module == data.main)?"":data.state ) + v.state;
                 
                 $stateProvider.state(state, {
@@ -58,12 +54,16 @@ function(angular, angularAMD, $){
         }
 
         function fail(data) {
-            console.log(data);
-            console.log("error");
+            console.log("error", data);
         }
     }
 
     function run ($rootScope, $state, $http) {
         console.log('app.run')
     }
+    
+    //angular.bootstrap(document, ['app']);
+    angularAMD.bootstrap(app);
+
+    return app;
 });
