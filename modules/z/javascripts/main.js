@@ -1,5 +1,6 @@
 /**
- * main.js
+ * z-frame main.js
+ * create by zhaotinghai@10161017
  */
 +function ( global ) {
 
