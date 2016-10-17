@@ -1,5 +1,5 @@
 ﻿/**
- * directive dashboard-log by z04434@20161013
+ * directive z-menu-side by z04434@20161013
  */
 define(['angularAMD', 'sprintf'],
     function (app) {
